@@ -55,7 +55,8 @@ number. If the last digit of the inserted number is 0, number remains the same.`
         let temp = num[num.length - 1];
 
         if(+temp == 0) return num;
-        return temp + num.slice(0,-1);
+        num = Math.floor(+num / 10);
+        return temp + num;
     }
 
     let number = prompt("Enter number");
@@ -114,12 +115,14 @@ using arrays).`);
     alert(`Find the sign of product of three numbers without multiplication operator. Display the
 specified sign.`);
     function checkSign(numbers) {
-        if(numbers.some(a => isNaN(a) || a == null)) return "Invalid input";
+        for(let i = 0; i < numbers.length; i++){
+            if(isNaN(numbers[i]) || numbers[i] == null) return "Invalid input";
+        }
         let lessThanZero = 0;
-        for(num of numbers){
-            if(num == 0){
+        for(let i = 0; i < numbers.length; i++){
+            if(numbers[i] == 0){
                 return "unsigned";
-            }else if (num < 0){
+            }else if (numbers[i] < 0){
                 lessThanZero++;
             }
         }
@@ -180,7 +183,7 @@ operators).`);
     alert(`10. Insert a digit and a number. Check whether the digits contains in the number or not.`);
     let number = prompt("Enter the number");
     let digit = prompt("Enter the digit");
-    alert(number.includes(digit) ? "Yes" : "No");
+    alert(number.indexOf(digit) != -1 ? "Yes" : "No");
 }
 /* Task 11 */
 {
@@ -230,9 +233,9 @@ For the triangle entered numbers are height and and base.`);
         let max = -Infinity;
         let min = Infinity;
 
-        for(x of numArr){
-            if(x > max) max = x;
-            if(x < min) min = x;
+        for(let i = 0; i < numArr.length; i++){
+            if(numArr[i] > max) max = numArr[i];
+            if(numArr[i] < min) min = numArr[i];
         }
 
         return max - min;
