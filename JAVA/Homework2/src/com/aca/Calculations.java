@@ -34,10 +34,10 @@ public class Calculations {
     }
 
     public int[] sortArr(int[] arr) {
-        for (var i = 0; i < arr.length - 1; i++){
-            for (var j = i + 1; j < arr.length; j++){
+        for (int i = 0; i < arr.length - 1; i++){
+            for (int j = i + 1; j < arr.length; j++){
                 if(arr[i] > arr[j]){
-                    var temp = arr[j];
+                    int temp = arr[j];
                     arr[j] = arr[i];
                     arr[i] = temp;
                 }
@@ -48,7 +48,7 @@ public class Calculations {
 
     public String checkSign(int[] numbers) {
         int lessThanZero = 0;
-        for(var i = 0; i < numbers.length; i++){
+        for(int i = 0; i < numbers.length; i++){
             if(numbers[i] == 0){
                 return "unsigned";
             }else if (numbers[i] < 0){
@@ -113,10 +113,10 @@ public class Calculations {
     public double findDifference(int num){
         String str = String.valueOf(num);
         String[] numArr = str.split("");
-        var max = Double.NEGATIVE_INFINITY;
-        var min = Double.POSITIVE_INFINITY;
+        double max = Double.NEGATIVE_INFINITY;
+        double min = Double.POSITIVE_INFINITY;
 
-        for(var i = 0; i < numArr.length; i++){
+        for(int i = 0; i < numArr.length; i++){
             if(Integer.valueOf(numArr[i]) > max) max = Integer.valueOf(numArr[i]);
             if(Integer.valueOf(numArr[i]) < min) min = Integer.valueOf(numArr[i]);
         }
