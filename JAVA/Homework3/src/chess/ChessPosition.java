@@ -7,7 +7,7 @@ public class ChessPosition {
     private char row;
     private int column;
 
-    ChessPosition(char x, int y) throws Exception{
+    public ChessPosition(char x, int y) throws Exception{
         int index = Arrays.asList(letters).indexOf(x);
         if(index == -1 || y < 1 || y > 8){
             throw new Exception("Invalid position");
@@ -16,19 +16,19 @@ public class ChessPosition {
         column = y;
     }
 
-    public int getRowIndex() {
+    int getRowIndex() {
         return Arrays.asList(letters).indexOf(row);
     }
 
-    public int getColumnIndex() {
+    int getColumnIndex() {
         return column - 1;
     }
 
-    char getRow() {
+    public char getRow() {
         return row;
     }
 
-    int getColumn() {
+    public int getColumn() {
         return column;
     }
 }

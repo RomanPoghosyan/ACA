@@ -12,12 +12,12 @@ public class Figure {
         return "Type: " + getType() + ", Color: " + getColor();
     }
 
-    String getColor(){
-        return color.toString();
+    Colors getColor(){
+        return color;
     }
 
-    String getType() {
-        return type.toString();
+    Figures getType() {
+        return type;
     }
 
     private void setColor(Colors color) {
