@@ -117,6 +117,22 @@ function productOfBiggestNegativeNumbers(arr) {
 
 /* Task 8 */
 
-function allPosibleSubsets(arr){
-
+function allPossibleSubsets(arr) {
+    if(arr.length < 3) return arr;
+    let possibleVersions = [];
+    for (let i = 0; i < arr.length; i++) {
+        let version = [arr[i]];
+        for (let j = 0; j < arr.length; j++) {
+            if(i == j) continue;
+            version[1] = arr[j]
+            for (let n = 0; n < arr.length; n++) {
+                if(i == n || j == n) continue;
+                version[2] = arr[n];
+                possibleVersions.push([...version]);
+            }
+        }
+    }
+    return possibleVersions;
 }
+
+// console.log(allPossibleSubsets([5, 9, 23, 0, -2, -1]));
