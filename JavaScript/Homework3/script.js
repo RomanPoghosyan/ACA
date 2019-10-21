@@ -58,24 +58,20 @@ function stringWithoutRepeatingCharacters(str) {
     let longest = "";
     let temp = "";
     for(let i = 0; i < str.length; i++){
-        if(str[i] != " " && temp.includes(str[i])) {
-            if(temp.length >= longest.length) longest = temp;
-            temp = "";
+        for(let j = i; j < str.length; j++) {
+            if (str[j] != " " && temp.includes(str[j])) {
+                if (temp.length >= longest.length) longest = temp;
+                temp = "";
+                break;
+            }
+            temp += str[j];
         }
-        temp += str[i];
     }
 
-    for(let i = str.length - 1; i >= 0; i--){
-        if(str[i] != " " && temp.includes(str[i])) {
-            if(temp.length >= longest.length) longest = temp;
-            temp = "";
-        }
-        temp += str[i];
-    }
     return longest;
 }
 
-// console.log(stringWithoutRepeatingCharacters("ascna xinqns"));
+console.log(stringWithoutRepeatingCharacters('there are no two words in the english language more harmful than "good job".'));
 
 /* Task 6 */
 
