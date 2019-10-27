@@ -1,5 +1,22 @@
 /* Task sub arrays recursion */
+/* Version first, the best I think */
+function subArrays(arr, n, result = [], temp = []){
+    if(n == 0){
+        result.push([...temp]);
+        return true;
+    }
 
+    for(let i = 0; i < arr.length; i++){
+        temp.push(arr[i]);
+        subArrays(arr.slice(i + 1), n - 1, result, temp);
+        temp.pop();
+    }
+    return result;
+}
+
+console.log(subArrays([1,2,3,4], 2));
+
+/* Version second */
 function subArr (arr, n, iterate = true, result = []){
     // debugger;
     if(n == 1){
