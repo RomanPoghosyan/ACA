@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bb570b7c-1c21-493f-a213-6fabc11f358e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="8c968cea-8105-4aa5-b41e-09356f4d67c3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Homework3_fibonacci/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Homework3_fibonacci/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,14 +19,21 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
-  <component name="ProjectId" id="1SQDLmC8NNu4zzbGdwrKm7avpmO" />
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\User\Documents\RomanWeb\ACA\JAVA\Homework5\Homework5_Palindrome\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1SZIlj0phcOFdM5ROGztC13si5c" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Homework5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Homework5_Palindrome" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -41,16 +48,16 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="Fibonacci" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Fibonacci" />
-      <module name="Homework3_fibonacci" />
+    <configuration name="Palindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Palindrome" />
+      <module name="Palindrome" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Fibonacci" />
+        <item itemvalue="Application.Palindrome" />
       </list>
     </recent_temporary>
   </component>
@@ -59,13 +66,13 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="bb570b7c-1c21-493f-a213-6fabc11f358e" name="Default Changelist" comment="" />
-      <created>1571486871597</created>
+      <changelist id="8c968cea-8105-4aa5-b41e-09356f4d67c3" name="Default Changelist" comment="" />
+      <created>1571764843876</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1571486871597</updated>
-      <workItem from="1571486877332" duration="4065000" />
-      <workItem from="1571863111866" duration="56000" />
+      <updated>1571764843876</updated>
+      <workItem from="1571764847552" duration="72000" />
+      <workItem from="1571863188326" duration="76000" />
     </task>
     <servers />
   </component>
