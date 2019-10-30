@@ -3,10 +3,10 @@ package tower.of.hanoi;
 import java.util.ArrayList;
 
 public class TowerOfHanoi {
-    ArrayList<Integer> firstTower;
-    ArrayList<Integer> secondTower;
-    ArrayList<Integer> thirdTower;
-    int length;
+    private ArrayList<Integer> firstTower;
+    private ArrayList<Integer> secondTower;
+    private ArrayList<Integer> thirdTower;
+    private int length;
 
     private void init(int length){
         firstTower = new ArrayList();
@@ -25,14 +25,13 @@ public class TowerOfHanoi {
     }
 
 
-    public boolean hanoiRecursion(ArrayList<Integer> first, ArrayList<Integer> second, ArrayList<Integer> third, int length){
-        if(length == 0) return true;
+    private void hanoiRecursion(ArrayList<Integer> first, ArrayList<Integer> second, ArrayList<Integer> third, int length){
+        if(length == 0) return;
 
         hanoiRecursion(first, third, second, length - 1);
         fromOneToAnother(first, second);
         hanoiRecursion(third, second, first, length - 1);
 
-        return true;
     }
 
     private boolean fromOneToAnother(ArrayList<Integer> first, ArrayList<Integer> second){
