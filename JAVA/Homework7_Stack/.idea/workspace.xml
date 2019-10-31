@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2295e82b-0437-4cad-8c67-554fad3389c2" name="Default Changelist" comment="" />
+    <list default="true" id="dd77d609-9a0c-4ae6-bb9f-c5e43b0663cd" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,10 +18,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectId" id="1Srx1ixDapvSPDIuN8SqJOAgmvA" />
+  <component name="ProjectId" id="1SeBmusLQqp2qmrE2c24RFUOgiR" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -40,11 +39,11 @@
   </component>
   <component name="RunManager">
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tower.of.hanoi.test.Test" />
-      <module name="TowerOfHanoi" />
+      <option name="MAIN_CLASS_NAME" value="com.company.Test" />
+      <module name="Stack" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tower.of.hanoi.test.*" />
+          <option name="PATTERN" value="com.company.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -63,30 +62,14 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2295e82b-0437-4cad-8c67-554fad3389c2" name="Default Changelist" comment="" />
-      <created>1572335302810</created>
+      <changelist id="dd77d609-9a0c-4ae6-bb9f-c5e43b0663cd" name="Default Changelist" comment="" />
+      <created>1571914343681</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1572335302810</updated>
-      <workItem from="1572335309053" duration="3718000" />
-      <workItem from="1572340114372" duration="12515000" />
-      <workItem from="1572504238960" duration="222000" />
+      <updated>1571914343681</updated>
+      <workItem from="1571914348056" duration="2468000" />
+      <workItem from="1572504741295" duration="5065000" />
     </task>
-    <task id="LOCAL-00001" summary="fix">
-      <created>1572344382302</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1572344382302</updated>
-    </task>
-    <task id="LOCAL-00002" summary="fix">
-      <created>1572351790491</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1572351790491</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -97,32 +80,21 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix" />
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/tower/of/hanoi/test/Test.java</url>
-          <line>9</line>
-          <option name="timeStamp" value="3" />
+          <url>file://$PROJECT_DIR$/src/com/company/ArrayStack.java</url>
+          <line>92</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="Application">
-        <watch expression="this.thirdTower" language="JAVA" />
-      </configuration>
-    </watches-manager>
   </component>
 </project>
