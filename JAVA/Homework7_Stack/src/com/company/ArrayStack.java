@@ -11,13 +11,13 @@ class ArrayStack<TElement> extends Stack<TElement>
     }
 
     @Override
-    void push(TElement tElement) {
+    public void push(TElement tElement) {
         last = current;
         current = new Element(tElement, last);
     }
 
     @Override
-    TElement pop() throws Exception {
+    public TElement pop() throws Exception {
         if(current == null) throw new Exception("Stack is empty");;
         Element temp = current;
         current = last;
@@ -28,7 +28,7 @@ class ArrayStack<TElement> extends Stack<TElement>
     }
 
     @Override
-    TElement pick() throws Exception {
+    public TElement pick() throws Exception {
         if(current != null && current.getCurrentValue() != null) {
             return (TElement) current.getCurrentValue();
         } else {
@@ -37,12 +37,12 @@ class ArrayStack<TElement> extends Stack<TElement>
     }
 
     @Override
-    boolean isEmpty() {
+    public boolean isEmpty() {
         return this.size() == 0;
     }
 
     @Override
-    boolean remove(TElement e) {
+    public boolean remove(TElement e) {
         int i;
         Element temp = current;
         Element last = null;
@@ -58,7 +58,7 @@ class ArrayStack<TElement> extends Stack<TElement>
     }
 
     @Override
-    boolean addAll(Stack<? extends TElement> s) throws Exception {
+    public boolean addAll(Stack<? extends TElement> s) throws Exception {
         int i;
 
         for(i = 0; !s.isEmpty(); i++){
@@ -68,13 +68,13 @@ class ArrayStack<TElement> extends Stack<TElement>
     }
 
     @Override
-    void clear() {
+    public void clear() {
         last = null;
         current = null;
     }
 
     @Override
-    boolean contains(TElement e) {
+    public boolean contains(TElement e) {
         int i;
         Element temp = current;
 
@@ -86,7 +86,7 @@ class ArrayStack<TElement> extends Stack<TElement>
     }
 
     @Override
-    int size() {
+    public int size() {
         int i;
         Element temp = current;
 
