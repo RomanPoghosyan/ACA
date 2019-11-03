@@ -8,6 +8,7 @@ function removeFirsElement(arr, i = 0, res = []){
 
 // console.log(removeFirsElement([7,8,1,2]));
 
+
 /* Task 2 */
 
 function concatNestedArrays(arr, res = []){
@@ -22,6 +23,7 @@ function concatNestedArrays(arr, res = []){
 }
 
 // console.log(concatNestedArrays([1, [3, 4, [1, 2]], 10]));
+
 
 /* Task 3 */
 
@@ -40,6 +42,7 @@ function sumOfDigits(num) {
 // console.log(sumOfDigits(29));
 // console.log(sumOfDigits(999999999999));
 
+
 /* Task 4 */
 
 function rotateArray(arr, n){
@@ -55,6 +58,7 @@ function rotateArray(arr, n){
 
 // console.log(rotateArray( ['a', 'b', 'c', 'd', 'e', 'f', 'g','‘h'], 3) );
 // console.log(rotateArray( ['a', 'b', 'c', 'd', 'e', 'f', 'g','‘h'], -2) );
+
 
 /* Task 5 */
 

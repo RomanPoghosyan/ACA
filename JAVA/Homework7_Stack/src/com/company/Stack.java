@@ -59,5 +59,5 @@ abstract class Stack<TElement>
      * @return true if all elements were added
      * @throws Exception if Stack s is empty
      */
-    public abstract boolean addAll(Stack<? extends TElement> s) throws Exception;
+    public abstract boolean addAll(Stack<TElement> s) throws Exception;
 }
