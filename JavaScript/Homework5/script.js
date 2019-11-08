@@ -82,22 +82,10 @@ function invertObject(obj) {
 
 function sortByPercentAndReadStatus(arr) {
     return arr.sort((a, b) => {
-        if(b.readStatus){
-            if(a.readStatus){
-                if((a.percent - b.percent) >= 0){
-                    return -1;
-                }else{
-                    return 1
-                }
-            }else {
-                return 1
-            }
+        if(( b.readStatus && a.readStatus && (( a.percent - b.percent ) >= 0 ) || ( !b.readStatus && a.readStatus ))){
+            return -1;
         } else {
-            if(a.readStatus){
-                return -1
-            }else {
-                return 1
-            }
+            return 1;
         }
     });
 }
@@ -108,7 +96,7 @@ let readers = [
     { book: "Animal Farm", readStatus: true, percent: 20},
     { book: "Solaris", readStatus: false, percent: 90 },
     { book: "The Fall", readStatus: true, percent: 50 },
-    { book: "White Nights", readStatus: false, percent: 60 } ,
+    { book: "White ", readStatus: false, percent: 60 } ,
     { book: "White Nights", readStatus: false, percent: 10 } ,
     { book: "After Dark", readStatus: true, percent: 70 }
 ];
