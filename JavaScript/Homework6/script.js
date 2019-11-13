@@ -14,18 +14,12 @@ function findPair(arr){
 
 /* Task 2 */
 function findMissingNumbers(arr){
-    let count = 0;
     arr.sort((a,b) => a - b);
-    for(let i = 0, num = arr[0]; num <= arr[arr.length - 1]; i++, num++){
-        if(num != arr[i]){
-            count++;
-            i--;
-        }
-    }
-    return count;
+    return arr[arr.length - 1] - arr[0] - arr.length + 1;
 }
 
-// console.log(findMissingNumbers([6,4,3,8,10,12]));
+console.log(findMissingNumbers([6,4,3,8,10,12]));
+console.log(findMissingNumbers([1,13,12,6,11]));
 
 
 /* Task 3 */
@@ -33,10 +27,10 @@ function acronym(phrase) {
     let words = phrase.split(" ");
     let result = "";
     words.forEach((word) => {result += word[0]});
-    return result;
+    return result.toUpperCase();
 }
 
-// console.log(acronym("Hayastani Petakan Tntesagitakan Hamalsaran"));
+console.log(acronym("Hayastani Petakan Tntesagitakan Hamalsaran"));
 
 
 /* Task 4 */
