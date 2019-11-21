@@ -1,5 +1,6 @@
 const PREV = document.querySelector(".prev");
 const NEXT = document.querySelector(".next");
+const PLAY = document.querySelector("#play-and-pause");
 const IMG_CONTAINER = document.querySelector("#img-container");
 
 let urls = [
@@ -45,7 +46,16 @@ function createInterval(){
 
 createInterval();
 
-
+let paused = false;
+PLAY.addEventListener("click", function(event){
+    paused = !paused;
+    if(paused){
+        clearInterval(timerId);
+    } else {
+        createInterval();
+    }
+    PLAY.innerHTML = paused ? "Play" : "Pause";
+})
 
 
 // const PREV = document.querySelector(".prev");

@@ -9,26 +9,32 @@
 }
 
 #img-container {
-    display: flex;
-    /*flex-direction: row;*/
     width: 600px;
     height: 500px;
     overflow: hidden;
 }
 
 .img-wrap {
-    /*display: inline-block;*/
     width: 600px;
     transition: all 1000ms;
 }
 
 .img {
     height: 400px;
-    /*max-width: 100%;*/
 }
 
 .prev, .next {
     width: 50px;
     height: 50px;
+    background: transparent;
+}
+
+.buttons-wrap {
+    text-align: center;
+}
+
+#play-and-pause {
+    width: 70px;
+    height: 30px;
     background: transparent;
 }
