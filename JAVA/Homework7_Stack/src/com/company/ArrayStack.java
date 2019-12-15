@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 public class ArrayStack<TElement> implements Collection {
     private Element last;
-    private Element current;
+    private Element<TElement> current;
 
     ArrayStack(){
         last = null;
@@ -22,17 +22,17 @@ public class ArrayStack<TElement> implements Collection {
 
     public TElement pop() throws Exception {
         if(current == null) throw new Exception("Stack is empty");
-        Element temp = current;
+        Element<TElement> temp = current;
         current = last;
         if(last != null) {
             last = last.getPrev();
         }
-        return (TElement) temp.getCurrentValue();
+        return temp.getCurrentValue();
     }
 
     public TElement peek() throws Exception {
         if(current != null) {
-            return (TElement) current.getCurrentValue();
+            return current.getCurrentValue();
         } else {
             throw new Exception("Stack is empty");
         }
