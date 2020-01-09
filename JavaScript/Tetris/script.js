@@ -71,11 +71,11 @@ const ITEMS = [
         leftTop: {x: 1, y: 3}
     },
 ];
-const COLORS = ["red", "yellow", "blue", "grey"];
+const COLORS = ["red", "yellow", "blue", "grey", "#00cc00"];
 let currentItem;
 let tetris = [];
 let game = null;
-let int = 2000;
+let int = 1000;
 let score = 0;
 
 const  rotate = (o, length, matrix) => {
@@ -95,8 +95,7 @@ const  rotate = (o, length, matrix) => {
 
 
 const getRandItem = () => {
-    // return ITEMS[Math.floor(Math.random() * ITEMS.length)];
-    return ITEMS[0];
+    return ITEMS[Math.floor(Math.random() * ITEMS.length)];
 };
 
 const getRandColor = () => {
@@ -123,7 +122,7 @@ const checkIfCompleteLine = () => {
 const render = () => {
     for (let i = 0; i < tetris.length; i++) {
         for (let j = 0; j < tetris[0].length; j++) {
-            document.querySelector(`.i${i}j${j}`).style.background = tetris[i][j] !== null ? tetris[i][j] : "green";
+            document.querySelector(`.i${i}j${j}`).style.background = tetris[i][j] !== null ? tetris[i][j] : "#ccff66";
         }
     }
 };
@@ -132,6 +131,10 @@ const addScore = (a) => {
     score = score + a;
     document.querySelector("#score").innerHTML = score;
     if(score > 10){
+        int = 700;
+    }else if(score > 30){
+        int = 400;
+    }else if(score > 50){
         int = 200;
     }
 };
