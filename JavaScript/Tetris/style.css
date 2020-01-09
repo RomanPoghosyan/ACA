@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.root {
+    display: grid;
+    height: 100vh;
+    position: relative;
+}
+
+.root .tetris {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    justify-self: center;
+    background-color: greenyellow;
+    width: 400px;
+    height: 600px;
+}
+
+.root .tetris .item {
+    width: 40px;
+    height: 40px;
+    background-color: green;
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+
+h1 {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    top: 50%;
+    margin-top: -50px;
+    display: none;
+}
+
+#score {
+    justify-self: center;
+    align-self: end;
+    font-size: 32px;
+}
